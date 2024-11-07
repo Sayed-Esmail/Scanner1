@@ -1,34 +1,17 @@
 include [Keywords]
-                   [White space]
 < [Operators]
 iostream [Keywords]
 > [Operators]
-
- [Newline]
-
- [Newline]
 using [Keywords]
-                     [White space]
 namespace [Keywords]
 std [Keywords]
 ; [Special characters]
-
- [Newline]
-
- [Newline]
 int [Keywords]
-             [White space]
 main [Keywords]
 ( [Special characters]
 ) [Special characters]
 { [Special characters]
-
- [Newline]
-                           [White space]
 // Single-line comment [Single-line comment]
-
- [Newline]
-                                                         [White space]
 cout [Keywords]
 << [Operators]
 "Hello, World!" [String literals]
@@ -36,58 +19,33 @@ cout [Keywords]
 endl [Keywords]
 ; [Special characters]
 // Output greeting [Single-line comment]
-
- [Newline]
-                                                             [White space]
 char [Keywords]
 ch [Identifiers]
 = [Operators]
 'A' [Character constants]
 ; [Special characters]
 // Character constant [Single-line comment]
-
- [Newline]
-                                                          [White space]
 string [Keywords]
 str [Identifiers]
 = [Operators]
 "example" [String literals]
 ; [Special characters]
 // String constant [Single-line comment]
-
- [Newline]
-                                                           [White space]
 int [Keywords]
 num [Identifiers]
 = [Operators]
 42 [Numeric constants]
 ; [Special characters]
 // Numeric constant [Single-line comment]
-
- [Newline]
-                                           [White space]
 string [Keywords]
 b [Identifiers]
 = [Operators]
 'hello,world from compiler' [Character constants]
 ; [Special characters]
-
- [Newline]
-              [White space]
 return [Keywords]
 0 [Numeric constants]
 ; [Special characters]
-
- [Newline]
-
- [Newline]
-                                  [White space]
 /*
   hello from compiler
    */ [Multi-line comment]
-
- [Newline]
 } [Special characters]
-  [White space]
-
- [Newline]
