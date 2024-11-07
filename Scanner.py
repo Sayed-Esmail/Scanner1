@@ -1,16 +1,15 @@
 import re
 
-# Define regex patterns for different C++ components
 patterns = {
-    "Single-line comment": r"//.*?$",  # Match single-line comments
-    "Multi-line comment": r"/\*[\s\S]*?\*/",  # Match multi-line comments
+    "Single-line comment": r"//.*?$",
+    "Multi-line comment": r"/\*[\s\S]*?\*/", 
     "Keywords": r"\b(auto|break|string|case|char|const|endl|continue|default|do|double|else|enum|extern|float|for|goto|if|int|long|namespace|operator|register|return|short|signed|sizeof|static|struct|switch|template|typedef|union|unsigned|void|volatile|while|bool|catch|class|const_cast|delete|dynamic_cast|explicit|export|friend|inline|mutable|new|private|protected|public|reinterpret_cast|static_cast|template|this|throw|try|typeid|typename|using|virtual|wchar_t|cout|cin|endl|cerr|clog|iostream|include|std|main)\b",
-    "Character constants": r"'([^'\\]*(\\.[^'\\]*)*)'",  # Match character literals including escaped characters
-    "String literals": r'"([^"\\]*(\\.[^"\\]*)*)"',  # Match string literals including escaped characters
-    "Identifiers": r"\b[a-zA-Z_]\w*\b",  # Identifiers should follow keywords and constants
-    "Operators": r"[+\-*/%=&|^!<>~?:]+",  # Common operators in C++
-    "Numeric constants": r"\b\d+(\.\d+)?\b",  # Match integers and floating-point numbers
-    "Special characters": r"[{}()\[\],.;]",  # Common special characters in C++
+    "Character constants": r"'([^'\\]*(\\.[^'\\]*)*)'", 
+    "String literals": r'"([^"\\]*(\\.[^"\\]*)*)"',  
+    "Identifiers": r"\b[a-zA-Z_]\w*\b",
+    "Operators": r"[+\-*/%=&|^!<>~?:]+",
+    "Numeric constants": r"\b\d+(\.\d+)?\b",
+    "Special characters": r"[{}()\[\],.;]",  
 }
 
 # Function to classify components in C++ code
@@ -58,5 +57,4 @@ input_file = r"E:\Fourth Year\Scanner of C++\input.txt"
 output_file = r"E:\Fourth Year\Scanner of C++\output.txt"
 # Run the scanner
 scan_cpp_file(input_file, output_file)
-
 print(f"Classification completed. Check '{output_file}' for results.")
