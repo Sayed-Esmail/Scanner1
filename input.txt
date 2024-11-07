@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Single-line comment
+    cout << "Hello, World!" << endl;  // Output greeting
+    char ch = 'A';                     // Character constant
+    string str = "example";            // String constant
+    int num = 42;                      // Numeric constant
+    string b ='hello,world from compiler';
+    return 0;
+
+   /*
+  hello from compiler
+   */
+}
